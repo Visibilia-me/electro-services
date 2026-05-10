@@ -10,12 +10,12 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue:#0A1628;
-  --blue-mid:#2563EB;
-  --blue-light:#F5C518;
+  --blue:#2C2C2C;
+  --blue-mid:#F97316;
+  --blue-light:#F97316;
   --blue-pale:#f5f5f5;
-  --accent:#2563EB;
-  --accent-dark:#060D1A;
+  --accent:#F97316;
+  --accent-dark:#1A1A1A;
   --gray:#F8F9FB;
   --gray2:#EEF0F3;
   --gray3:#D1D5DB;
@@ -136,7 +136,7 @@ a{text-decoration:none;color:inherit}
 .review-card{border:1px solid var(--gray2);border-radius:var(--radius2);padding:24px;position:relative}
 .review-card::before{content:'';position:absolute;top:0;left:24px;right:24px;height:3px;background:var(--accent);border-radius:0 0 3px 3px}
 .review-stars{font-size:14px;color:var(--accent);margin-bottom:12px;letter-spacing:2px}
-.review-text{font-size:15px;color:var(--text);line-height:1.7;margin-bottom:16px}
+.review-text::before{content:'\201C'}.review-text::after{content:'\201D'}.review-text{font-size:15px;color:var(--text);line-height:1.7;margin-bottom:16px}
 .review-author{font-size:13px;font-weight:600;color:var(--text)}
 .review-when{font-size:12px;color:var(--text3);margin-top:2px}
 
@@ -255,7 +255,7 @@ a{text-decoration:none;color:inherit}
   <div class="container hero-inner">
     <div class="reveal">
       <div class="hero-label">Elettricista · Torino</div>
-      <h1 class="hero-title">Il tuo elettricista di fiducia</h1>
+      <h1 class="hero-title">Intervento rapido, risultato garantito</h1>
       <p class="hero-sub">Il tuo elettricista di fiducia a Torino — preciso, puntuale e con preventivo gratuito.</p>
       <div class="hero-ctas">
         <a href="tel:3512619592" class="btn btn-accent">📞 Chiama ora</a>
@@ -273,14 +273,6 @@ a{text-decoration:none;color:inherit}
           <div class="hero-stat-label">Recensioni verificate</div>
           <div class="hero-stat-value">116</div>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">Anni di esperienza</div>
-          <div class="hero-stat-value">20+</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">Interventi completati</div>
-          <div class="hero-stat-value">1.200+</div>
-        </div>
       </div>
     </div>
   </div>
@@ -296,7 +288,6 @@ a{text-decoration:none;color:inherit}
       <div><div class="statsbar-num">116</div><div class="statsbar-lbl">Recensioni</div></div>
     </div>
     <div class="statsbar-item reveal" style="transition-delay:.16s">
-      <div><div class="statsbar-num">20+</div><div class="statsbar-lbl">Anni</div></div>
     </div>
     <div class="statsbar-item reveal" style="transition-delay:.24s">
       <div><div class="statsbar-num">H24</div><div class="statsbar-lbl">Reperibile</div></div>
@@ -426,22 +417,21 @@ a{text-decoration:none;color:inherit}
     <div class="reviews-grid">
       <div class="review-card reveal">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Giuseppe was so honest , quick , and polite, and did a really good job . I am very pleased of their work."</p>
-        <div class="review-author">Sina Javadi Fard</div>
-        <div class="review-when">Milano · 1 settimana fa</div>
+        <p class="review-text">“Ho avuto il piacere di rivolgermi a Giuseppe per alcuni lavori elettrici in casa e devo dire che è stato un vero professionista. Puntuale, preciso e soprattutto onesto — qualità sempre più rare oggi.”</p>
+        <div class="review-author">Mary</div>
+        <div class="review-when">Torino · 1 settimana fa</div>
       </div>
       <div class="review-card reveal" style="transition-delay:.1s">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"I had the pleasure of working with Giuseppe for some electrical work at my home, and I must say he was a true professional. Punctual, precise, and above all honest—qualities that are increasingly rare these days.
-The system was installed impeccably, "</p>
-        <div class="review-author">Mary</div>
-        <div class="review-when">6 months ago</div>
+        <p class="review-text">“Contatto Electro Services per continui distacchi di corrente. Il sig. Giuseppe è intervenuto rapidamente sostituendo il salvavita che ormai era logoro e controllando la presa da cui era iniziato il problema.”</p>
+        <div class="review-author">Gigi Molon</div>
+        <div class="review-when">5 mesi fa</div>
       </div>
       <div class="review-card reveal" style="transition-delay:.2s">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"I contacted Electro Services for persistent power outages. Mr. Giuseppe responded quickly, replacing the worn circuit breaker and checking the outlet where the problem originated. The repair was quick, clean, and definitive; the unexpected outages ha"</p>
-        <div class="review-author">Gigi Molon</div>
-        <div class="review-when">5 months ago</div>
+        <p class="review-text">“Domenica sera senza luce. Chiamata d'emergenza a Eletro Services trovato per caso su Google.  Risponde il Sig. Beppe. Si fa spiegare la situazione e da dei consigli per risolvere il problema.”</p>
+        <div class="review-author">John Liemandt</div>
+        <div class="review-when">6 mesi fa</div>
       </div>
     </div>
   </div>
@@ -454,14 +444,10 @@ The system was installed impeccably, "</p>
       <div class="about-img">
         <img src="foto/foto2.jpg" alt="" onerror="this.parentElement.style.background='var(--gray)'">
       </div>
-      <div class="about-badge">
-        <div class="about-badge-num">20+</div>
-        <div class="about-badge-text">anni di esperienza</div>
-      </div>
     </div>
-    <div>
+    <div class="about-content">
       <div class="tag reveal">Chi siamo</div>
-      <h2 class="h2 reveal">Tecnici certificati</h2>
+      <h2 class="h2 reveal">Precisione in ogni intervento</h2>
       <p class="sub reveal" style="margin-top:16px">Specializzati in impianti elettrici civili e commerciali, operiamo nel rispetto delle normative CEI vigenti. Ogni lavoro è certificato e garantito. La sicurezza dei nostri clienti viene prima di tutto.</p>
       <p class="sub reveal" style="margin-top:12px;transition-delay:.08s"></p>
       <div class="about-points reveal" style="transition-delay:.12s">
